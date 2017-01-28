@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+  </head>
+
+  <body id="landing">
+    <div class="fluid-container">
+      <div class="crosshatch1"></div>
+      <div class="crosshatch2"></div>
+      <div class="crosshatch3"></div>
+      <div class="crosshatch4">
+        <a class="btn btn-success" id="btn-cont" href="home/index">Continue to the website...</a>
+      </div>
+      <div class="crosshatch5"></div>
+      <div class="horizontal-strip1">
+        <div class="content-area">
+          <div id="msg" id="quote-content">
+            Loading, please wait...
+          </div>
+          <div id="content" style="display:none;">
+            <blockquote id="quote-content"></blockquote>
+            <small>-</small>
+            <small id="quote-author"></small>
+          </div>
+          <div class="button-bar">
+            <a id="btn-tweet" target="_blank" title="Tweet this quote!"><button class="btn btn-info" id="btn-twitter">Tweet this quote
+              <i class="fa fa-twitter btn-twit"></i>
+            </a>
+        <button id="get-quote" class="btn btn-info">New Quote</button>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-strip2"></div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,23 @@
+<div class="page-head">
+  <h2>Home&nbsp;&nbsp;<small>Put your mark on the internet</small></h2>
+</div>
+<div class="main-content">
+  <h3>Welcome</h3>
+  <p>
+    Welcome to External Interpolation!<br>
+    This is your home to express yourself, share and brag about your new favorite ideas, stories, products, games, songs... I think you get the idea.  Share your creations and ideas with us!
+  </p>
+
+  <h4>Whats happening</h4>
+
+  <div>
+    <% @posts.each do |post| %>
+    <div class="post-box">
+      <p><%= post.title %></p>
+      <p><%= post.content %></p>
+      <%= link_to("Read more", post_path(post)) %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

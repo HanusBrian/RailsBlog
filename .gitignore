@@ -1,0 +1,5 @@
+.git
+config/secrets.yml
+bin/
+config.ru
+tmp/

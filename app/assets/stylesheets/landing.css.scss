@@ -1,0 +1,198 @@
+// Place all the styles related to the Landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@media screen and (max-width: 1000px) {
+  .content-area {
+    left: 19% !important;
+    width: 69% !important;
+    height: 100%;
+  }
+
+  blockquote {
+    font-size: 14px !important;
+  }
+  small {
+    font-size: 12px !important;
+  }
+  .horizontal-strip1 {
+    height: 60% !important;
+  }
+  .crosshatch1 {
+    width: 10% !important;
+  }
+  .crosshatch2 {
+    width: 5% !important;
+    left: 10% !important;
+  }
+  .crosshatch3 {
+    width: 2% !important;
+    left: 15% !important;
+  }
+  .crosshatch4 {
+    width: 73% !important;
+    left: 17% !important;
+  }
+  .crosshatch5 {
+    width: 10% !important;
+    left: 90% !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  blockquote {
+    font-size: 12px !important;
+  }
+  small {
+    font-size: 10px !important;
+  }
+  .content-area {
+    left: 65px !important;
+    width: 200px !important;
+    height: 100%;
+  }
+  .horizontal-strip1 {
+    height: 65% !important;
+  }
+  .crosshatch1 {
+    width: 30px !important;
+  }
+  .crosshatch2 {
+    width: 20px !important;
+    left: 30px !important;
+  }
+  .crosshatch3 {
+    width: 6px !important;
+    left: 50px !important;
+  }
+  .crosshatch4 {
+    width: 214px !important;
+    left: 56px !important;
+  }
+  .crosshatch5 {
+    width: 30px !important;
+    left: 270px !important;
+  }
+}
+
+body {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+i {
+  color: white;
+}
+
+small {
+  color: silver;
+}
+
+.btn-info {
+  color: #FEFFFE !important;
+  opacity: 1 !important;
+}
+
+.btn-success {
+  opacity: 1 !important;
+}
+
+.by-text {
+  text-align: center;
+  padding-right: 30px;
+}
+
+#btn-cont {
+  position: absolute;
+  right: 15px;
+  top: 80%;
+}
+
+.button-bar {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+#get-quote {
+  right: 15px;
+  float: right;
+}
+
+#msg {
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.content-area {
+  color: white;
+  position: absolute;
+  left: 31%;
+  width: 48%;
+  height: 100%;
+}
+
+.horizontal-strip1 {
+  color: black;
+  background-color: red;
+  width: 100%;
+  height: 50%;
+  opacity: .4;
+  position: absolute;
+  top: 15%;
+}
+
+.horizontal-strip2 {
+  color: black;
+  background-color: aqua;
+  width: 100%;
+  height: 5%;
+  opacity: .4;
+  position: absolute;
+  top: 90%;
+}
+
+.crosshatch1 {
+  background-color: green;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  opacity: .6;
+}
+
+.crosshatch2 {
+  left: 20%;
+  background-color: red;
+  height: 100%;
+  width: 7%;
+  position: absolute;
+  opacity: .6;
+}
+
+.crosshatch3 {
+  left: 27%;
+  background-color: orange;
+  height: 100%;
+  width:3%;
+  position: absolute;
+  opacity: .6;
+}
+
+.crosshatch4 {
+  left: 30%;
+  background-color: pink;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  opacity: .6;
+}
+
+.crosshatch5 {
+  left: 80%;
+  background-color: purple;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: .6;
+}

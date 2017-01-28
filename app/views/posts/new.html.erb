@@ -1,0 +1,25 @@
+<h2>Create your new post</h2>
+
+<%= form_for(@post) do |f| %>
+<table>
+  <tr>
+    <td>
+      <%= f.label :title %>
+    </td>
+    <td>
+      <%= f.text_field(:title) %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.label :content, "What do you want to say" %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.text_area(:content) %>
+    </td>
+  </tr>
+</table>
+  <%= f.submit("Interpolate!!!") %>
+<% end %>

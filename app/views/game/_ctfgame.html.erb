@@ -1,0 +1,28 @@
+<!-- EXTRASOURCES -->
+<!-- Loads the Javascript code...-->
+<script src="Runtime.js"></script>
+
+<!-- This is where we create the Canvas element that will contain the application...-->
+<div>
+  <div id="wrapper">
+    <div id="border">
+      <canvas id="MMFCanvas" width="640" height="480">
+        <p>Your browser does not support Canvas.</p>
+      </canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+  // RUNTIMESTART
+  // This is where the HTML5 runtime is actually started
+	window.addEventListener("load", windowLoaded, false);
+  function windowLoaded()
+	{
+      // Calls the runtime
+	    // First parameter : name of the canvas element
+		  // Second parameter : path to the cch file. Images and sounds must lay beside this file
+      new Runtime("MMFCanvas", "Mario 2.0.cch");
+	    }
+    // RUNTIMESTARTEND
+</script>

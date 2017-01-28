@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="nav-header" id="home">
+      <div class="container">
+        <h1><%= link_to("ExInt", "/home/index") %>&nbsp;<small class="sub-title">External Interpolation</small></h1>
+        <div class="dd-container">
+        	<div id="dd-button" class="dd-button"></div>
+        	<div id="dd-menu" class="dd-content">
+            <%= link_to("Home", {:controller => "home", :action => "index"}) %>
+            <%= link_to("Blog", posts_path) %>
+            <%= link_to("Game", {:controller => "game", :action => "index"}) %>
+            <%= link_to("Quotes", "/") %>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container body">
+      <%= yield %>
+    </div>
+  </body>
+</html>

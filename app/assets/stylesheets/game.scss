@@ -1,0 +1,32 @@
+// Place all the styles related to the Game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.game-window {
+  border: 2px solid black;
+}
+.MMFDiv {
+  display:block;
+  margin: 0 auto;
+}
+#wrapper {
+	padding: 10px;
+	margin: 0 auto;
+
+  background-color: grey;
+}
+#border {
+	background-color: #FFF;
+	border: 2px solid black;
+	margin: 0 auto;
+	width: 644px;
+	height: 484px;
+  padding: 1px;
+}
+.game-display {
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+  min-width: 500px;
+  margin: 5px;
+  padding: 7px;
+}

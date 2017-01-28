@@ -1,0 +1,15 @@
+<h1>Blog Posts</h1>
+<div id="new-post">
+<%= link_to("New Post", new_post_path) %>
+</div>
+<p>Check out what you have written</p>
+
+<div>
+  <% @posts.each do |post| %>
+  <div class="post-box">
+    <p><%= post.title %></p>
+    <p><%= post.content %></p>
+    <%= link_to("Edit post", post_path(post)) %>
+    </div>
+  <% end %>
+</div>
